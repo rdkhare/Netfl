@@ -2,19 +2,20 @@
 import SwiftyJSON
 import Alamofire
  
-
+// protocol movieData {
+//    func userInformation(movies : JSON);
+// }
 class ViewController: UIViewController {
     
    
+    @IBOutlet weak var hiddenLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+//    var delegate : movieData? = nil;
     
     @IBOutlet weak var DirectorField: UITextField!
     @IBOutlet weak var ActorField: UITextField!
@@ -46,6 +47,10 @@ class ViewController: UIViewController {
                     
                     
                     print(json)
+                    self.hiddenLabel.text = json.stringValue;
+                    
+//                        self.delegate?.userInformation(movies: json);
+                    
                     
                     let randomInt = arc4random_uniform(UInt32(json.count))
                     self.movieName.text = json[Int(randomInt)]["show_title"].stringValue

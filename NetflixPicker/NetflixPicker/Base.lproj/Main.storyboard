@@ -59,6 +59,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oe-ng-fiB">
+                                <rect key="frame" x="163" y="602" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99693938410964367" green="1" blue="0.98556143177947531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -75,6 +82,7 @@
                     <connections>
                         <outlet property="ActorField" destination="iXL-F3-Jvq" id="DcU-tG-R1Q"/>
                         <outlet property="DirectorField" destination="Aop-dB-gQk" id="D0j-9k-1Dc"/>
+                        <outlet property="hiddenLabel" destination="7Oe-ng-fiB" id="zt9-Ao-SnN"/>
                         <outlet property="movieName" destination="7Y7-94-tkv" id="FVV-dr-LAJ"/>
                     </connections>
                 </viewController>
@@ -99,16 +107,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9du-n0-Ptm">
+                                <rect key="frame" x="110" y="56" width="180" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="testLabel" destination="9du-n0-Ptm" id="aOw-VG-PGR"/>
                         <outlet property="wheel" destination="uCb-XS-pHn" id="kfM-eR-ONr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NlA-wp-zzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="139"/>
+            <point key="canvasLocation" x="1005.6" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

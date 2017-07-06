@@ -6,7 +6,8 @@ target 'NetflixPicker' do
   use_frameworks!
 
   # Pods for NetflixPicker
-  pod 'Alamofire', '~> 4.4'
-  pod 'SwiftyJSON'
+  pod ‘Alamofire’
+
+  pod ’SwiftyJSON’
 
 end
