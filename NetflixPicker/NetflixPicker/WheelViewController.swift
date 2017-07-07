@@ -14,14 +14,16 @@ import Alamofire
 class WheelViewController: UIViewController{
     @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var wheel: UIView!
+    @IBOutlet weak var pickerView: UIPickerView!
     
-    var testString = "test"
+    var testString = ""
     
     override func viewDidLoad() {
+        
+        testLabel.text = testString
         super.viewDidLoad()
         wheel.makeCircle()
         wheel.backgroundColor = UIColor.cyan
-        testLabel.text = testString
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,13 +33,5 @@ class WheelViewController: UIViewController{
 //    func userInformation(movies: JSON) {
 //        testLabel.text = movies[0]["show_title"].stringValue
 //    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toWheel"{
-            //let vc : ViewController = segue.destination as! ViewController;
-            let motionMovement : WheelViewController = segue.destination as! WheelViewController
-            motionMovement.testString = testLabel.text!
-            
-            
-        }
-    }
+    
 }

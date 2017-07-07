@@ -46,7 +46,6 @@
                                 <state key="normal" title="Search"/>
                                 <connections>
                                     <action selector="Search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mq6-nq-FPU"/>
-                                    <segue destination="Gkz-y3-19q" kind="show" identifier="toWheel" id="eEx-ae-shl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y7-94-tkv">
@@ -84,6 +83,7 @@
                         <outlet property="DirectorField" destination="Aop-dB-gQk" id="D0j-9k-1Dc"/>
                         <outlet property="hiddenLabel" destination="7Oe-ng-fiB" id="zt9-Ao-SnN"/>
                         <outlet property="movieName" destination="7Y7-94-tkv" id="FVV-dr-LAJ"/>
+                        <segue destination="Gkz-y3-19q" kind="show" identifier="toWheel" id="hro-B0-aUU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -114,10 +114,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bl0-TC-4tP">
+                                <rect key="frame" x="62" y="503" width="251" height="144"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="pickerView" destination="Bl0-TC-4tP" id="Pw9-Tp-znu"/>
                         <outlet property="testLabel" destination="9du-n0-Ptm" id="aOw-VG-PGR"/>
                         <outlet property="wheel" destination="uCb-XS-pHn" id="kfM-eR-ONr"/>
                     </connections>

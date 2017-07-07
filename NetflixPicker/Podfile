@@ -9,5 +9,5 @@ target 'NetflixPicker' do
   pod ‘Alamofire’
 
   pod ’SwiftyJSON’
-
+  pod ‘MBProgressHUD’
 end
